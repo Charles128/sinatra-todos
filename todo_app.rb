@@ -13,9 +13,12 @@ Dotenv.load
 set :database, ENV['DATABASE_URL']
 
 get '/' do
+  @todos = Todo.all
   erb :index
 end
 
 post '/posts' do
-  "#{params["New Todo"]}"
+ # "#{params["New Todo"]}"
+  Todo.create(:name => params["New_Todo"])
+  redirect '/'
 end

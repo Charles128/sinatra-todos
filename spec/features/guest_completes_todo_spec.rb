@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 feature "Guest completes todo" do
-  xscenario "Completing a todo removes it from the page" do
+  scenario "Completing a todo removes it from the page" do
     call_mother = Todo.create(name: "Call mother")
     Todo.create(name: "Pet a dog")
     visit '/'

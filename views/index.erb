@@ -1,8 +1,12 @@
 <form action="/posts" method="post"role="form">
 
-  <input type="text" name="New Todo">
+  <input type="text" name="New_Todo" value="Task">
   <button type="submit"> Create Todo </button>
 
   <h1>Here's all the things to do:</h1>
 
 </form>
+
+<% @todos.each do |task| %>
+<%= task.name %><br>
+<%end%>

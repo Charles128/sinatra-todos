@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20131008182759) do
 
   create_table "todos", force: true do |t|
-    t.string   "description"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
