@@ -15,3 +15,7 @@ set :database, ENV['DATABASE_URL']
 get '/' do
   erb :index
 end
+
+post '/posts' do
+  "#{params["New Todo"]}"
+end
