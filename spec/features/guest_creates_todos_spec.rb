@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 feature 'Guest creates todo' do
-  xscenario "it creates the todo when they provide a name" do
+  scenario "it creates the todo when they provide a name" do
     visit '/'
     fill_in "New Todo", with: "Take out the trash"
 

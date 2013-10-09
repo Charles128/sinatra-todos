@@ -17,8 +17,8 @@ get '/' do
   erb :index
 end
 
-post '/posts' do
+post '/' do
  # "#{params["New Todo"]}"
-  Todo.create(:name => params["New_Todo"])
+  Todo.create(params)
   redirect '/'
 end
