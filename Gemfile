@@ -3,6 +3,7 @@ ruby "1.9.3"
 
 gem 'sinatra'
 gem 'sinatra-activerecord'
+gem 'dotenv'
 
 
 group :production, :staging do
@@ -22,7 +23,6 @@ end
 group :development, :test do
 # Heroku ignores development/test groups
 # https://devcenter.heroku.com/articles/getting-started-with-ruby#runtime-dependencies-on-development-test-gems
-  gem 'dotenv'
   gem 'sqlite3'
   gem 'shotgun'
   gem 'capybara'
