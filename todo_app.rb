@@ -5,7 +5,7 @@ require 'sinatra/activerecord'
 
 require 'models/todo'
 
-ActiveRecord::Base.establish_connection(ENV['DATBASE_URL'] || "postgres://localhost/#{DB_NAME}")
+ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || "postgres://localhost/todos")
 
 # This loads environment variables from the .env file
 require 'dotenv'
